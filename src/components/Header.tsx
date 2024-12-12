@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <>
       <header>
-        <nav className="flex justify-between p-4 md:px-12 items-center h-16 lg:h-20 font-heading text-lg">
+        <nav className="flex justify-between p-4 md:px-12 items-center h-16 lg:h-20 font-heading text-sm">
           <div>
             <NavLink
               to={"/"}
@@ -33,13 +33,19 @@ export const Header = () => {
           </div>
           <ul className="hidden md:block md:flex md:justify-around md:w-full md:max-w-md font-medium">
             <li className="hover:text-gray-500">
-              <NavLink to={"/om-mig"}>OM MIG</NavLink>
+              <NavLink to={"/"}>HEM</NavLink>
             </li>
             <li className="hover:text-gray-500">
               <NavLink to={"/konst"}>KONST</NavLink>
             </li>
             <li className="hover:text-gray-500">
+              <NavLink to={"/fotokonst"}>FOTOKONST</NavLink>
+            </li>
+            <li className="hover:text-gray-500">
               <NavLink to={"/bestall"}>BESTÄLL</NavLink>
+            </li>
+            <li className="hover:text-gray-500">
+              <NavLink to={"/om"}>OM</NavLink>
             </li>
             <li className="hover:text-gray-500">
               <NavLink to={"/kontakt"}>KONTAKT</NavLink>
@@ -48,15 +54,21 @@ export const Header = () => {
         </nav>
 
         {isMenuOpen && (
-          <ul className="flex-col md:hidden min-h-screen font-heading text-xl">
+          <ul className="flex-col md:hidden min-h-screen font-heading text-lg">
             <li className="p-4" onClick={handleToggleMenu}>
-              <NavLink to={"/om-mig"}>OM MIG</NavLink>
+              <NavLink to={"/"}>HEM</NavLink>
             </li>
             <li className="p-4" onClick={handleToggleMenu}>
               <NavLink to={"/konst"}>KONST</NavLink>
             </li>
             <li className="p-4" onClick={handleToggleMenu}>
+              <NavLink to={"/fotokonst"}>FOTOKONST</NavLink>
+            </li>
+            <li className="p-4" onClick={handleToggleMenu}>
               <NavLink to={"/bestall"}>BESTÄLL</NavLink>
+            </li>
+            <li className="p-4" onClick={handleToggleMenu}>
+              <NavLink to={"/om"}>OM</NavLink>
             </li>
             <li className="p-4" onClick={handleToggleMenu}>
               <NavLink to={"/kontakt"}>KONTAKT</NavLink>

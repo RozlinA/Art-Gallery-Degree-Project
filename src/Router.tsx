@@ -6,6 +6,8 @@ import { ArtDetails } from "./pages/ArtDetails";
 import { Order } from "./pages/Order";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
+import { Home } from "./pages/Home";
+import { PhotoArt } from "./pages/PhotoArt";
 
 export const router = createBrowserRouter([
   {
@@ -13,8 +15,8 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "om-mig",
-        element: <About />,
+        path: "/",
+        element: <Home />,
       },
       {
         path: "/konst",
@@ -23,6 +25,14 @@ export const router = createBrowserRouter([
       {
         path: "/konst/:artId",
         element: <ArtDetails />,
+      },
+      {
+        path: "/fotokonst",
+        element: <PhotoArt />,
+      },
+      {
+        path: "/om",
+        element: <About />,
       },
       {
         path: "/bestall",
