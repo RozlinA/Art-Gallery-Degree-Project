@@ -36,7 +36,7 @@ export const ContactForm = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="border-black flex flex-col gap-4 p-4 md:p-0 w-[33%]"
+        className="border-black flex flex-col gap-4 pb-5"
       >
         <div className="flex justify-between">
           <input
@@ -45,7 +45,7 @@ export const ContactForm = () => {
             id="firstName"
             placeholder="*Förnamn"
             required
-            className="border border-black placeholder-black p-1.5 w-[165px] md:w-[49.5%] rounded-sm"
+            className="border border-black placeholder-[#3c3c3c] p-2 w-[49.5%] rounded-sm"
           />
 
           <input
@@ -53,7 +53,7 @@ export const ContactForm = () => {
             name="lastName"
             placeholder="*Efternamn"
             required
-            className="border border-black placeholder-black p-1.5 w-[165px] md:w-[49.5%] rounded-sm"
+            className="border border-black placeholder-[#3c3c3c] p-2 w-[49.5%] rounded-sm"
           />
         </div>
 
@@ -63,7 +63,7 @@ export const ContactForm = () => {
           id="email"
           placeholder="*E-post"
           required
-          className="border border-black placeholder-black p-1.5 rounded-sm"
+          className="border border-black placeholder-[#3c3c3c] p-2 rounded-sm"
         />
 
         <input
@@ -71,7 +71,7 @@ export const ContactForm = () => {
           name="phone"
           id="phone"
           placeholder="Telefonnummer"
-          className="border border-black placeholder-black p-1.5 rounded-sm"
+          className="border border-black placeholder-[#3c3c3c] p-2 rounded-sm"
         />
 
         <input
@@ -79,7 +79,7 @@ export const ContactForm = () => {
           name="artwork"
           id="artwork"
           placeholder="Namn på konstverk"
-          className="border border-black placeholder-black p-1.5 rounded-sm"
+          className="border border-black placeholder-[#3c3c3c] p-2 rounded-sm"
         />
 
         <textarea
@@ -87,7 +87,7 @@ export const ContactForm = () => {
           id="message"
           placeholder="*Meddelande"
           required
-          className="border border-black placeholder-black p-1.5 h-48 rounded-sm"
+          className="border border-black placeholder-[#3c3c3c] p-2 h-48 rounded-sm"
         ></textarea>
 
         <button
