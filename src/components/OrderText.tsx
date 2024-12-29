@@ -12,8 +12,8 @@ export const OrderText = () => {
 
             <p>
               Hitta det verk som fångar ditt intresse i galleriet. Notera
-              konstverkets namn och kontakta oss via formuläret eller e-post för
-              att lägga din beställning.
+              konstverkets namn och kontakta konstnären via formuläret eller
+              e-post för att lägga din beställning.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export const OrderText = () => {
 
           <div>
             <p>
-              <b className="font-semibold">För personliga beställningar:</b>{" "}
+              <b className="font-semibold">För personliga beställningar:</b>
               Konstnären kontaktar dig för att diskutera detaljer innan arbetet
               börjar.
             </p>
@@ -54,8 +54,8 @@ export const OrderText = () => {
 
           <div>
             <p>
-              <b className="font-semibold">Leverans:</b> Vi packar och skickar
-              din tavla säkert direkt till din dörr.
+              <b className="font-semibold">Leverans:</b> Din beställning packas
+              och skickas säkert till den angivna adressen.
             </p>
           </div>
         </div>
@@ -64,8 +64,8 @@ export const OrderText = () => {
           <h3 className="text-xl">Frågor eller funderingar?</h3>
 
           <p>
-            Vi finns här för att hjälpa dig! Tveka inte att kontakta oss via
-            [e-post] eller [telefon] om du behöver hjälp eller vill veta mer.
+            Behöver du hjälp eller har frågor? Tveka inte att ta kontakt via
+            konst@gmail.com eller 073-456 78 90 för mer information.
           </p>
         </div>
       </div>
