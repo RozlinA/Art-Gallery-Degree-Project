@@ -80,23 +80,24 @@ export const ArtDetails = () => {
             </div>
 
             {/* Behållare för de små bilderna/valbara bilder i desktop */}
-
-            <div className="hidden md:flex flex-col w-[10%] h-full max-h-[400px] gap-2 overflow-y-auto">
-              {allImages.map((artworkImage, i) => (
-                <div key={i}>
-                  <img
-                    src={artworkImage.image_url}
-                    alt={artworkImage.alt_text}
-                    onClick={() => setCurrentImageIndex(i)}
-                    className={`cursor-pointer transition-opacity duration-300 ${
-                      i === currentImageIndex
-                        ? "opacity-100"
-                        : "opacity-50 hover:opacity-75"
-                    }`}
-                  />
-                </div>
-              ))}
-            </div>
+            {allImages.length > 1 && (
+              <div className="hidden md:flex flex-col w-[10%] h-full max-h-[400px] gap-2 overflow-y-auto">
+                {allImages.map((artworkImage, i) => (
+                  <div key={i}>
+                    <img
+                      src={artworkImage.image_url}
+                      alt={artworkImage.alt_text}
+                      onClick={() => setCurrentImageIndex(i)}
+                      className={`cursor-pointer transition-opacity duration-300 ${
+                        i === currentImageIndex
+                          ? "opacity-100"
+                          : "opacity-50 hover:opacity-75"
+                      }`}
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
 
             {/* Behållare för huvudbild */}
 
@@ -119,7 +120,9 @@ export const ArtDetails = () => {
                 </h2>
                 <p className="text-gray-500">{artDetails?.size}</p>
                 <p className="text-gray-500">{artDetails?.technique}</p>
-                <p className="py-4">{artDetails?.price} SEK</p>
+                {artDetails.price && (
+                  <p className="py-4">{artDetails?.price} SEK</p>
+                )}
               </div>
 
               <Link to={"/bestall"}>
