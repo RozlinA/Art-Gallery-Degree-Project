@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <>
-      <section className="w-screen h-[620px]">
+      <section className="w-screen h-screen md:h-[620px]">
         <div
           className="w-full h-full bg-cover bg-center flex flex-col justify-center items-center gap-6"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-          <h1 className="text-6xl text-white font-extrabold tracking-widest text-center">
+          <h1 className="text-5xl md:text-6xl text-white font-extrabold tracking-widest text-center">
             ARTbyWOLF
           </h1>
 
