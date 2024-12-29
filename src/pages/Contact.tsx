@@ -73,7 +73,7 @@ export const Contact = () => {
               </div>
             </div>
             <div className="w-full md:w-[60%] flex flex-col gap-6 md:border-l md:border-gray-300 md:pl-20">
-              <ContactForm></ContactForm>
+              <ContactForm showCustomField={false}></ContactForm>
               <hr className="md:hidden" />
             </div>
           </div>

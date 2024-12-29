@@ -1,7 +1,11 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-export const ContactForm = () => {
+interface IContactFormProps {
+  showCustomField: boolean;
+}
+
+export const ContactForm = ({ showCustomField }: IContactFormProps) => {
   const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -74,13 +78,26 @@ export const ContactForm = () => {
           className="border border-black placeholder-[#3c3c3c] p-2 rounded-sm"
         />
 
-        <input
-          type="text"
-          name="artwork"
-          id="artwork"
-          placeholder="Namn på konstverk"
-          className="border border-black placeholder-[#3c3c3c] p-2 rounded-sm"
-        />
+        {showCustomField && (
+          <input
+            type="text"
+            name="artwork"
+            id="artwork"
+            placeholder="Namn på konstverk"
+            className="border border-black placeholder-[#3c3c3c] p-2 rounded-sm"
+          />
+        )}
+
+        {!showCustomField && (
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="*Ämne"
+            required
+            className="border border-black placeholder-[#3c3c3c] p-2 rounded-sm"
+          />
+        )}
 
         <textarea
           name="message"

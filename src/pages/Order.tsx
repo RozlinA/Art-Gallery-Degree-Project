@@ -37,7 +37,7 @@ export const Order = () => {
                 </p>
               </div>
 
-              <ContactForm></ContactForm>
+              <ContactForm showCustomField={true}></ContactForm>
               <hr className="md:hidden" />
             </div>
           </div>
