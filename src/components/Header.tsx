@@ -13,14 +13,14 @@ export const Header = () => {
   return (
     <>
       <header>
-        <nav className="flex justify-between p-4 md:px-12 items-center h-16 lg:h-20 font-heading text-sm">
+        <nav className="flex justify-between p-4 md:px-12 items-center h-16 md:h-20 font-heading text-sm">
           <div>
             <NavLink
               to={"/"}
               className="text-2xl font-bold hover:text-gray-500"
               onClick={() => setIsMenuOpen(false)}
             >
-              LA Art
+              ARTbyWOLF
             </NavLink>
           </div>
           <div className="md:hidden">
