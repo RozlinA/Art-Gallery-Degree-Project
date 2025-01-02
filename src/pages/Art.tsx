@@ -1,4 +1,4 @@
-import backgroundImage from "../assets/theLandBetweenTheRivers3.jpg";
+import backgroundImage from "../assets/theLandBetweenTheRivers4.jpg";
 import { Link } from "react-router-dom";
 import { useFetchArtworks } from "../hooks/useFetchArtworks";
 
@@ -12,7 +12,7 @@ export const Art = () => {
           className="w-full h-full max-h-[150px] md:max-h-[600px] bg-cover bg-center flex flex-col justify-center items-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-          <h1 className="text-4xl md:text-5xl text-white font-extrabold tracking-widest">
+          <h1 className="text-4xl md:text-5xl text-black font-extrabold tracking-widest">
             KONST
           </h1>
         </div>
