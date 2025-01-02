@@ -117,6 +117,11 @@ export const ArtDetails = () => {
               <div className="w-full">
                 <h2 className="uppercase text-2xl font-medium pb-1 md:pb-4">
                   {artDetails?.title}
+                  {!artDetails.is_available && (
+                    <span className="text-red-500 font-bold uppercase">
+                      &nbsp;- SÅLD
+                    </span>
+                  )}
                 </h2>
                 <p className="text-gray-500">{artDetails?.size}</p>
                 <p className="text-gray-500">{artDetails?.technique}</p>
@@ -127,7 +132,9 @@ export const ArtDetails = () => {
 
               <Link to={"/bestall"}>
                 <button className="bg-black text-white p-2 w-full hover:bg-[#3c3c3c] rounded-sm">
-                  Beställ konstverket
+                  {artDetails.is_available
+                    ? "Beställ konstverket"
+                    : "Beställ liknande konstverk"}
                 </button>
               </Link>
             </div>
