@@ -44,7 +44,7 @@ export const ArtDetails = () => {
                 <IonIcon
                   icon={chevronBackOutline}
                   size="large"
-                  className="absolute left-0 cursor-pointer"
+                  className="absolute -left-8 cursor-pointer"
                   onClick={handlePrev}
                 />
 
@@ -57,7 +57,7 @@ export const ArtDetails = () => {
                 <IonIcon
                   icon={chevronForwardOutline}
                   size="large"
-                  className="absolute right-0 cursor-pointer"
+                  className="absolute -right-8 cursor-pointer"
                   onClick={handleNext}
                 />
               </div>
