@@ -46,7 +46,7 @@ export const OrderText = () => {
 
           <div>
             <p>
-              <b className="font-semibold">För personliga beställningar:</b>
+              <b className="font-semibold">För personliga beställningar:</b>{" "}
               Konstnären kontaktar dig för att diskutera detaljer innan arbetet
               börjar.
             </p>

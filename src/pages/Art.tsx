@@ -12,7 +12,7 @@ export const Art = () => {
           className="w-full h-full max-h-[150px] md:max-h-[600px] bg-cover bg-center flex flex-col justify-center items-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-          <h1 className="text-4xl md:text-5xl text-black font-extrabold tracking-widest">
+          <h1 className="text-4xl md:text-5xl text-gray-900 font-extrabold tracking-widest">
             KONST
           </h1>
         </div>

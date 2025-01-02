@@ -8,7 +8,7 @@ export const Order = () => {
   return (
     <>
       <div
-        className="w-screen h-screen max-h-[100px] md:max-h-[160px] bg-cover bg-center flex flex-col justify-center items-center"
+        className="w-screen h-screen max-h-[100px] md:max-h-[130px] bg-cover bg-center flex flex-col justify-center items-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <h1 className="text-3xl md:text-5xl text-white font-extrabold tracking-widest">

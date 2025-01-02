@@ -1,9 +1,13 @@
 import AboutImage from "../assets/About.jpg";
+import backgroundImage from "../assets/Midyat2.jpg";
 
 export const About = () => {
   return (
     <>
-      <div className="w-screen h-screen max-h-[80px] md:max-h-[100px] bg-black flex flex-col justify-center items-center md:mb-2">
+      <div
+        className="w-screen h-screen max-h-[100px] md:max-h-[130px] bg-cover bg-center flex flex-col justify-center items-center"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
         <h1 className="text-3xl md:text-5xl text-white font-extrabold tracking-widest">
           OM
         </h1>
