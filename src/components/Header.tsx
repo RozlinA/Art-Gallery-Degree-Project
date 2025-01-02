@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <>
       <header>
-        <nav className="flex justify-between p-4 md:px-12 items-center h-16 md:h-20 font-heading text-sm">
+        <nav className="flex justify-between p-4 md:px-12 items-center h-20 md:h-20 font-heading text-sm">
           <div>
             <NavLink
               to={"/"}
