@@ -5,7 +5,7 @@ export interface Artwork {
   created_at: string;
   title: string;
   main_image: string;
-  price?: number;
+  price?: string;
   category: string;
   size?: string;
   technique?: string;

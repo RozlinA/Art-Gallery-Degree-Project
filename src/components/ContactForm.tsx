@@ -5,6 +5,9 @@ interface IContactFormProps {
   showCustomField: boolean;
 }
 
+// This code is based on the EmailJS documentation to send form data via their service.
+// See: https://www.emailjs.com/docs/
+
 export const ContactForm = ({ showCustomField }: IContactFormProps) => {
   const form = useRef<HTMLFormElement | null>(null);
 

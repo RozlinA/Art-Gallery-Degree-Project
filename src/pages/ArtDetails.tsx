@@ -37,8 +37,6 @@ export const ArtDetails = () => {
       {artDetails && (
         <section className="w-screen h-auto md:h-[680px] flex justify-center items-start md:items-center mb-10 md:mb-0">
           <div className="w-4/5 h-max-[60%] flex flex-col md:flex-row justify-center items-center gap-10">
-            {/* Behållare för bilderna i mobil + karusell */}
-
             <div className="block md:hidden relative w-full max-w-full md:max-w-[90%] bg-gray-100">
               <div className="flex justify-center items-center">
                 <IonIcon
@@ -79,7 +77,6 @@ export const ArtDetails = () => {
               </div>
             </div>
 
-            {/* Behållare för de små bilderna/valbara bilder i desktop */}
             {allImages.length > 1 && (
               <div className="hidden md:flex flex-col w-[10%] h-full max-h-[400px] gap-2 overflow-y-auto">
                 {allImages.map((artworkImage, i) => (
@@ -99,8 +96,6 @@ export const ArtDetails = () => {
               </div>
             )}
 
-            {/* Behållare för huvudbild */}
-
             <div className="hidden md:block w-[45%] h-full bg-gray-100">
               <div>
                 <img
@@ -110,8 +105,6 @@ export const ArtDetails = () => {
                 />
               </div>
             </div>
-
-            {/* Behållare för text detaljer */}
 
             <div className="w-full md:w-[25%] h-full flex flex-col justify-end gap-6 mt-4">
               <div className="w-full">
