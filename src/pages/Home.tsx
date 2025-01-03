@@ -13,14 +13,14 @@ export const Home = () => {
             ARTbyWOLF
           </h1>
 
-          <div className="flex justify-center items-center gap-4">
+          <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4">
             <Link to={"/konst"}>
-              <button className="bg-[#141414] text-white font-semibold py-2 px-6 hover:bg-[#3c3c3c] rounded-sm">
+              <button className="w-[280px] md:w-full bg-[#141414] text-white font-semibold py-2 px-6 hover:bg-[#3c3c3c] rounded-sm">
                 Visa konst
               </button>
             </Link>
             <Link to={"/fotokonst"}>
-              <button className="bg-[#141414] text-white font-semibold py-2 px-6 hover:bg-[#3c3c3c] rounded-sm">
+              <button className="w-[280px] md:w-full bg-[#141414] text-white font-semibold py-2 px-6 hover:bg-[#3c3c3c] rounded-sm">
                 Visa fotokonst
               </button>
             </Link>
